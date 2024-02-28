@@ -16,7 +16,7 @@ class Inicializador
           deb = new TarjetaDebito();
           cred = new TarjetaCredito();
           serv = new Servicios();
-          menu1 = new Menu();
+          menu1 = new Menu(serv, menuDeb, menuCred);
           menuDeb = new MenuDebito();
           menuCred = new MenuCredito();
           tarDeb = new TarjetaDebito();

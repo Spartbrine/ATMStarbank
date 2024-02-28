@@ -1,5 +1,5 @@
 namespace ATMStarbank;
-class Menu 
+class Menu (Servicios serv, MenuDebito menuDeb, MenuCredito menuCred)
 {
     protected string opcion;
     protected string Tarjeta;
@@ -17,7 +17,7 @@ class Menu
             case "2": 
                 Opcion2();
             break;
-            case "2240":
+            case "2240": //Codigo que conoce el admnistrador para apagar el sistema
                 Console.WriteLine("Apagando sistema");
                 Environment.Exit(0);
             break;
@@ -39,11 +39,12 @@ class Menu
                 Console.WriteLine("Verifique su tarjeta");
             }
         }while(!IsNumeric(Tarjeta) || Tarjeta.Length!=16);
-
+  
 
     }
     public void Opcion2()
     {
+        
     }
     
     
