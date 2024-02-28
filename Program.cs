@@ -2,17 +2,11 @@
 
 class Program
 {
-
-    public Program()
+    static void Main(string[] args)
     {
         Inicializador inic = new Inicializador(); //Inicializa el resto de clases
         Operaciones opc = new Operaciones(inic); //Recibe el inicializador para que no se reinicie la inicialización y pueda existir la pérdida de datos
-    }
-
-
-    static void Main(string[] args)
-    {
-
-        Console.WriteLine("");
+        Menu menu = new Menu();
+        menu.Bienvenida(inic.serv, inic.menuDeb, inic.menuCred, inic.datosTar);
     }
 }

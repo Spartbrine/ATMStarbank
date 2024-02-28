@@ -3,6 +3,6 @@ class Operaciones (Inicializador inic)
 {
     public void Opciones()
     {
-        inic.UseClasses()
+        inic.UseClasses();
     }
 }
