@@ -5,12 +5,10 @@ class Usuario
 {
     public int Id { get; set; }
     public string TipoTarjeta { get; set; }
-
     public Usuario(int id)
     {
         Id = id;
     }
-
     public void ObtenerTipoTarjeta()
     {
         // Crear una instancia de BaseDeDatos y utilizarla para obtener el tipo de tarjeta

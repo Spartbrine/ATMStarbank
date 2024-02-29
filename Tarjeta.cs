@@ -17,7 +17,7 @@ class DatosTarjeta
     string solicitud, Tarjeta;
     private string connectionString;
 
-    public void PedirTarjeta() //MEtodo que pide tarjeta
+    public void PedirTarjeta() //Metodo que pide tarjeta
     {
         
          do

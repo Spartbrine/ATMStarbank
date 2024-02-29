@@ -4,15 +4,13 @@ class Menu
     protected int opcion;
     protected string solicitud;
     protected string Tarjeta;
-    private string connectionString;
-
     public bool Bienvenida(Servicios serv, MenuDebito menuDeb, MenuCredito menuCred, DatosTarjeta datosTar)
     {
         bool salida = true;
  
         Console.WriteLine("Bienvenido a ATMStarbank");
         Console.WriteLine("¿Qué operación desea realizar hoy?");
-        Console.WriteLine("1.- Acceder con tarjeta \n 2.- Pago de servicios"); //En este caso como no debe de verse la opcion de apagar el sistema porque podria crear brechas de seguridad el administrador debe conocer el codigo de salida (en este caso será 2440) 
+        Console.WriteLine("1.- Acceder con tarjeta \n2.- Pago de servicios"); //En este caso como no debe de verse la opcion de apagar el sistema porque podria crear brechas de seguridad el administrador debe conocer el codigo de salida (en este caso será 2440) 
             opcion = Convert.ToInt32(Console.ReadLine());
 
             switch(opcion)

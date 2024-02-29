@@ -2,7 +2,6 @@ namespace ATMStarbank;
 class Inicializador
 {
 
-    public Conexion conex { get; private set; }
     public TarjetaDebito deb { get; private set; }
     public TarjetaCredito cred { get; private set; }
     public Servicios serv { get; private set; }
@@ -15,7 +14,6 @@ class Inicializador
 
     public Inicializador()
     {
-        conex = new Conexion();
         deb = new TarjetaDebito();
         cred = new TarjetaCredito();
         serv = new Servicios();

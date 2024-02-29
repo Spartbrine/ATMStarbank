@@ -4,13 +4,13 @@ namespace ATMStarbank;
 
 public class Conexion
 {
-    private string connectionString;
     private SqlConnection connection;
-    private string server = "atmstarbanke2.redirectme.net", database = "ATMStarbank", username = "Remoto", password = "P1lat4no901LF25";
-    public Conexion()
+    private string connectionString;
+
+    public Conexion() // Construye la cadena de conexión 
     {
-        // Construye la cadena de conexión
-        connectionString = $"Server={server};Database={database};User Id={username};Password={password};";
+
+        connectionString = "Server=Insertar servidor;Database=Insertar base de datos;User Id= Usuario;Password=contraseña de acceso;Encrypt=True;Integrated Security=True";
         connection = new SqlConnection(connectionString);
     }
 
