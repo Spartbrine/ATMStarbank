@@ -9,7 +9,6 @@ public class Conexion
 
     public Conexion() // Construye la cadena de conexión 
     {
-        connectionString =;
         connection = new SqlConnection(connectionString);
     }
 
